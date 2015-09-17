@@ -74,6 +74,11 @@ public class Headers extends ListFragment {
         // When in two-pane layout, set the listview to highlight the selected list item
         // (We do this during onStart because at the point the listview is available.)
         if (getFragmentManager().findFragmentById(R.id.articles_fragment) != null) {
+            //getListView() Get the activity's list view widget.
+            //setChoiceMode(int) Defines the choice behavior for the List.
+            // By default, Lists do not have any choice behavior (CHOICE_MODE_NONE).
+            // By setting the choiceMode to CHOICE_MODE_SINGLE, the List allows up to one item to be in a chosen state.
+            // By setting the choiceMode to CHOICE_MODE_MULTIPLE, the list allows any number of items to be chosen.
             getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         }
     }

@@ -12,7 +12,7 @@ import org.w3c.dom.Text;
 
 
 public class Articles extends Fragment {
-    private static final String ARG_POSITION = "position";
+    public static final String ARG_POSITION = "position";
     private int mCurrentPosition = -1;
 
     @Nullable
